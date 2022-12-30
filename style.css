@@ -1,0 +1,124 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.Main_container_top{
+  display: flex;
+  justify-content: space-between; 
+  margin: 0px 15rem; 
+  margin-top: 5rem;
+  width: 740px;
+}
+
+
+.Main_container_top_months > select{
+  cursor: pointer;
+  width: 180px;
+  height: 50px;
+  font-size: 24px;
+  border: 1.5px solid black;
+}
+
+.Main_container_top_year > select{
+  cursor: pointer;
+  width: 180px;
+  height: 50px;
+  font-size: 24px;
+  border: 1.5px solid black;
+}
+
+.weekends{
+  margin: 0px 15rem;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  width: 740px;
+}
+
+
+.weekends div{
+  border: 1px solid black;
+  width: 100%;
+  padding: 9px 0px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.days{
+  margin: 0px 15rem;
+  display: flex;
+  flex-wrap: wrap;
+  width: 740px;
+}
+
+.days div{
+  width: 14.28%;
+  border: 1px solid black;
+  padding: 9px 0px;
+  text-align: center;
+  font-size: 15px;
+  transition: all 0.4s;
+}
+
+.days div:hover{
+  cursor: pointer;
+  background-color: #bac4c9;
+}
+
+.today{
+  background-color: green;
+}
+
+
+.input_container{
+  margin: 2rem 15rem;
+  width: 740px;
+  
+}
+
+.input_container > input{
+  width: 200px;
+  height: 50px;
+  border: 1.5px solid black;
+  text-align: center;
+  font-weight: bold;
+}
+
+.input_container > button{
+  margin-left: 2rem;
+  width: 100px;
+  height: 50px;
+  border: none;
+  color: white;
+  background-color: blue;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 780px){
+   .Main_container_top,
+   .weekends,
+   .days,
+   .input_container{
+    width: 400px;
+    margin: 0px 5rem;
+   }
+   .weekends,
+   .input_container{
+    margin-top: 2rem;
+   }
+   .Main_container_top_months > select,
+   .Main_container_top_year > select{
+    width: 150px;
+    height: 40px;
+   }
+}
+
+
+
+
+
+
